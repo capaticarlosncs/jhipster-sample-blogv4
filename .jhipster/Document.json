@@ -1,0 +1,46 @@
+{
+  "applications": "*",
+  "changelogDate": "20221128073518",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "document",
+  "fields": [
+    {
+      "fieldName": "title",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "sizes",
+      "fieldType": "Long",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "mimeType",
+      "fieldType": "String"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "Document",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "content",
+      "otherEntityRelationshipName": "document",
+      "ownerSide": true,
+      "relationshipName": "content",
+      "relationshipType": "one-to-one"
+    },
+    {
+      "otherEntityField": "id",
+      "otherEntityName": "car",
+      "otherEntityRelationshipName": "document",
+      "relationshipName": "car",
+      "relationshipType": "many-to-one",
+      "relationshipValidateRules": "required"
+    }
+  ],
+  "service": "no"
+}
