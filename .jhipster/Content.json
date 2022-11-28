@@ -1,0 +1,32 @@
+{
+  "applications": "*",
+  "changelogDate": "20221128073519",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "content",
+  "fields": [
+    {
+      "fieldName": "data",
+      "fieldType": "byte[]",
+      "fieldTypeBlobContent": "any",
+      "fieldValidateRules": ["required"]
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "Content",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityField": "id",
+      "otherEntityName": "document",
+      "otherEntityRelationshipName": "content",
+      "ownerSide": false,
+      "relationshipName": "document",
+      "relationshipType": "one-to-one",
+      "relationshipValidateRules": "required"
+    }
+  ],
+  "service": "no"
+}

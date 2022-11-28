@@ -4,7 +4,7 @@ entity Car {
 
 entity Document {
   title String required
-  size Long required
+  sizes Long required
   mimeType String
 }
 
